@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    .nav-bar {
+        background-color: rgb(0, 0, 0);
+        padding: 0 150px;
+        height: 80px;
+        h3 {
+            margin: 0;
+            color: white;
+        }
+    }
+}
+
+main {
+    background-image: url("../images/dnd-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    .element-dicegenerator {
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 30px 50px;
+        p {
+            display: inline-block;
+        }
+        .input-area {
+            width: 70px;
+            margin-left: 5px;
+        }
+    }
+}

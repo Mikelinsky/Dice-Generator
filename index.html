@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dice generator</title>
-    </head>
-    <body>
-        <h1>Dice generator</h1>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Tools</title>
+    <link rel="stylesheet" type="text/css" href="css/style.prefixed.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <h3>D&D Tools</h3>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="element-dicegenerator">
+                    <h1>Dice generator</h1>
+                    <form>
+                        <p>Number of roll: </p><input type="text" name="number of die rolls" class="input-area">
+                    </form>
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="radio" name="dice" value="d4"> d4
+                            </li>
+                            <li>
+                                <input type="radio" name="dice" value="d6"> d6
+                            </li>
+                            <li>
+                                <input type="radio" name="dice" value="d8"> d8
+                            </li>
+                            <li>
+                                <input type="radio" name="dice" value="d10"> d10
+                            </li>
+                            <li>
+                                <input type="radio" name="dice" value="d12"> d12
+                            </li>
+                            <li>
+                                <input type="radio" name="dice" value="d20"> d20
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
