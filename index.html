@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="nav-bar">
-            <h3>D&D Tools</h3>
+            <h1>DnD Tools</h1>
         </div>
     </header>
     <main>
@@ -20,34 +20,39 @@
                 <div class="element-dicegenerator">
                     <h1>Dice generator</h1>
                     <form>
-                        <p>Number of roll: </p><input type="text" name="number of die rolls" class="input-area">
+                        <p>Number of roll: </p><input type="text" name="number of die rolls" class="input-area" id="js-numberOfRoll">
                     </form>
                     <form>
                         <ul>
                             <li>
-                                <input type="radio" name="dice" value="d4"> d4
+                                <input type="radio" name="dice" value="d4" id="js-d4"> d4
                             </li>
                             <li>
-                                <input type="radio" name="dice" value="d6"> d6
+                                <input type="radio" name="dice" value="d6" id="js-d6"> d6
                             </li>
                             <li>
-                                <input type="radio" name="dice" value="d8"> d8
+                                <input type="radio" name="dice" value="d8" id="js-d8"> d8
                             </li>
                             <li>
-                                <input type="radio" name="dice" value="d10"> d10
+                                <input type="radio" name="dice" value="d10" id="js-d10"> d10
                             </li>
                             <li>
-                                <input type="radio" name="dice" value="d12"> d12
+                                <input type="radio" name="dice" value="d12" id="js-d12"> d12
                             </li>
                             <li>
-                                <input type="radio" name="dice" value="d20"> d20
+                                <input type="radio" name="dice" value="d20" id="js-d20"> d20
                             </li>
                         </ul>
                     </form>
+                    <h3>Result: </h3><h3 id="js-result"></h3>
+                    <button id="js-rollButton">
+                        Roll!
+                    </button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
