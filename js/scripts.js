@@ -1,5 +1,5 @@
 var rollButton = document.getElementById("js-rollButton");
-var result = document.getElementById("js-result");
+var resultArea = document.getElementById("js-result");
 var dice = document.getElementsByClassName("dice");
 var bankForRolls = [];
 
@@ -15,7 +15,7 @@ function roll() {
         } 
     }
     
-    result.innerHTML = "";
+    resultArea.innerHTML = "";
     bankForRolls = [];
     
     if (dice[i].value == 1) {
@@ -55,6 +55,11 @@ function roll() {
             console.log("d20 is rolling");
         }
     } 
-    
     console.log(bankForRolls);
+
+    function getSum(total, num) {
+        return total + num;
+    }
+    var result = bankForRolls.reduce(getSum);
+    resultArea.innerHTML = result;
 }
