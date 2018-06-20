@@ -65,4 +65,16 @@ main {
     main .element-dicegenerator #js-result {
       margin-left: 7px; }
 
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "God of War";
+  background-color: black;
+  color: #fff; }
+
 /*# sourceMappingURL=style.prefixed.css.map */

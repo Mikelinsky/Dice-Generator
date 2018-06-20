@@ -61,4 +61,13 @@ main {
     main .element-dicegenerator #js-result {
       margin-left: 7px; }
 
+footer {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-family: "God of War";
+  background-color: black;
+  color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
