@@ -57,9 +57,10 @@ function roll() {
     } 
     console.log(bankForRolls);
 
-    function getSum(total, num) {
-        return total + num;
+    function callback(previousValue, currentValue) {
+        return previousValue + currentValue;
     }
-    var result = bankForRolls.reduce(getSum);
+    var result = bankForRolls.reduce(callback);
     resultArea.innerHTML = result;
+    console.log(result);
 }
